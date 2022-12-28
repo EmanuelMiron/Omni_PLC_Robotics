@@ -668,6 +668,7 @@ banner
 .swiper-container {
   height: calc(100vh - 0px);
   margin: 0px;
+  padding-top: 100px;
   background-color: #212741;
 }
 
@@ -1710,9 +1711,9 @@ body {
   /* .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   } */
-  .slide-inner .header-text p {
+  /* .slide-inner .header-text p {
     display: none;
-  }
+  } */
   .slide-inner .header-text {
     text-align: center;
     width: 80%;
