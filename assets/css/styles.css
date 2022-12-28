@@ -1750,11 +1750,11 @@ body {
 }
 
 .slide1::before {
-  background-image: url('../images/slide-01.jpg');
+  background-image: url('../images/slide-02.jpg');
 }
 
 .slide2::before {
-  background-image: url('../images/slide-02.jpg');
+  background-image: url('../images/slide-01.jpg');
 }
 
 .slide3::before {
