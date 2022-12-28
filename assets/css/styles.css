@@ -250,7 +250,6 @@ header
 
 .header-area .main-nav .nav {
   float: right;
-  margin-top: 40px;
   margin-right: 0px;
   background-color: transparent;
   -webkit-transition: all 0.3s ease 0s;
@@ -520,10 +519,6 @@ header
 .header-area.header-sticky .main-nav .logo {
   line-height: 80px;
   width: 160px;
-}
-
-.header-area .nav {
-  margin-top: 30px;
 }
 
 .header-area.header-sticky .nav li a.active {
