@@ -719,6 +719,7 @@ banner
   width: 50%;
   top: 50%;
   transform: translateY(-50%);
+  flex-direction: column;
 }
 
 .slide-inner .header-text h2 {
@@ -745,7 +746,7 @@ banner
 
 .slide-inner .header-text p {
   color: #fff;
-  margin-right: 60px;
+  /* margin-right: 60px; */
   margin-bottom: 50px;
   font-size:1.1em;
   opacity: 1;
@@ -1792,4 +1793,10 @@ body {
   background-color: transparent;
   color: white;
   padding: 0;
+}
+
+.align-center {
+  display: flex;
+  align-content: center;
+  justify-content: center;
 }
