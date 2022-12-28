@@ -408,17 +408,12 @@ header
   cursor: pointer;
   display: block;
   position: absolute;
-  top: 33px;
   width: 32px;
   height: 40px;
   text-indent: -9999em;
   z-index: 99;
   right: 40px;
   display: none;
-}
-
-.background-header .main-nav .menu-trigger {
-  top: 23px;
 }
 
 .header-area .main-nav .menu-trigger span,
