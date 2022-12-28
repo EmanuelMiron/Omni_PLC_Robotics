@@ -1700,12 +1700,19 @@ body {
   .background-header .main-nav .logo {
     line-height: 80px;
   }
+  img{
+    width: 150%;
+  }
+
+  .slide-inner .header-text h2 {
+    font-size: 40px;
+  }
   /* .header-area .main-nav .nav li.has-sub ul.sub-menu {
     display: none;
   } */
-  /* .slide-inner .header-text p {
+  .slide-inner .header-text p {
     display: none;
-  } */
+  }
   .slide-inner .header-text {
     text-align: center;
     width: 80%;
