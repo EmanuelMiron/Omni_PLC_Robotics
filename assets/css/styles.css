@@ -1752,27 +1752,15 @@ body {
 }
 
 .slide1::before {
-  background-image: url('../images/slide-02.jpg');
+  background-image: url('../images/04.png');
 }
 
 .slide2::before {
-  background-image: url('../images/slide-01.jpg');
+  background-image: url('../images/05.jpg');
 }
 
 .slide3::before {
-  background-image: url('../images/slide-03.jpg');
-}
-
-.slide4::before {
-  background-image: url('../images/slide-04.png');
-}
-
-.slide5::before {
-  background-image: url('../images/slide-05.jpg');
-}
-
-.slide6::before {
-  background-image: url('../images/slide-06.jpg');
+  background-image: url('../images/03.jpg');
 }
 
 .slide-inner:before {
