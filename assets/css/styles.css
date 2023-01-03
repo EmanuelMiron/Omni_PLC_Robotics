@@ -323,11 +323,13 @@ header
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
   color: #ff511a;
+  font-weight: bold;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
   color: #ff511a;
+  font-weight: bold;
   opacity: 1;
 }
 
@@ -523,6 +525,7 @@ header
 
 .header-area.header-sticky .nav li a.active {
   color: #ff511a;
+  font-weight: bold;
 }
 
 .header-area.header-sticky .nav li a.contact-btn.active {
