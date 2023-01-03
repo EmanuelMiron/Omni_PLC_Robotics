@@ -59,75 +59,6 @@
   <div class="swiper-container" id="top">
     <div class="swiper-wrapper">
       <div class="swiper-slide">
-        <div class="slide-inner slide1">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 align-center">
-                <div class="header-text align-center">
-                  <h2>Project <em>Management</em></h2>
-                  <div class="div-dec"></div>
-                  <p>Participam împreuna cu clientul de la primele faze de început ale proiectului pentru a crea un plan si o urmarire eficienta a BOM-ului cat si încadrarea întregului proiect in time planul discutat împreună cu clientul.</p>
-                  <div class="buttons">
-                    <div class="green-button">
-                      <a href="#services">toate Serviciile</a>
-                    </div>
-                    <div class="orange-button">
-                      <a href="#contact">Contactează-ne</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide-inner slide2">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 align-center">
-                <div class="header-text align-center">
-                  <h2>Technical <em>assistance</em></h2>
-                  <div class="div-dec"></div>
-                  <p>Oferim un suport tehnic in alegerea sau testarea diverselor concepte înainte de a decide o anumită soluție tehnica. Una dintre activitatile noastre de zi cu zi o reprezinta si testarea diverselor noi tehnologii apărute astfel incat sa ne putem dezvolta competentele in vederea dezvoltării viitoarelor noi proiecte.</p>
-                  <div class="buttons">
-                    <div class="green-button">
-                      <a href="#services">toate Serviciile</a>
-                    </div>
-                    <div class="orange-button">
-                      <a href="#contact">Contactează-ne</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
-        <div class="slide-inner slide3">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-8 align-center">
-                <div class="header-text align-center">
-                  <h2><em>Simulation</em></h2>
-                  <div class="div-dec"></div>
-                  <p>Una dintre cele mai importante etape in realizarea unui proiect o reprezinta simularea.  Fara aceasta simulare costurile si riscurile pot fi enorme in anumite situații. In urma simularilor se pot obtine date importante precum: cycle time și modelul de robot necesar.</p>
-                  <div class="buttons">
-                    <div class="green-button">
-                      <a href="#services">toate Serviciile</a>
-                    </div>
-                    <div class="orange-button">
-                      <a href="#contact">Contactează-ne</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-slide">
         <div class="slide-inner slide4">
           <div class="container">
             <div class="row">
@@ -174,14 +105,14 @@
         </div>
       </div>
       <div class="swiper-slide">
-        <div class="slide-inner slide6">
+        <div class="slide-inner slide3">
           <div class="container">
             <div class="row">
-              <div class="col-lg-8">
+              <div class="col-lg-8 align-center">
                 <div class="header-text align-center">
-                  <h2><em>Process</em></h2>
+                  <h2><em>Simulation</em></h2>
                   <div class="div-dec"></div>
-                  <p>Încercăm cu fiecare proiect sa pastram targetul asumat împreuna cu clientul si pe cat posibil sa ne concentrăm pe eficientă si încadrarea in termenul asignat.</p>
+                  <p>Una dintre cele mai importante etape in realizarea unui proiect o reprezinta simularea.  Fara aceasta simulare costurile si riscurile pot fi enorme in anumite situații. In urma simularilor se pot obtine date importante precum: cycle time și modelul de robot necesar.</p>
                   <div class="buttons">
                     <div class="green-button">
                       <a href="#services">toate Serviciile</a>
@@ -199,6 +130,7 @@
     </div>
     <div class="swiper-button-next swiper-button-white"></div>
     <div class="swiper-button-prev swiper-button-white"></div>
+    <div class="swiper-pagination"></div>
   </div>
 
   <!-- ***** Main Banner Area End ***** -->
@@ -380,14 +312,22 @@
 
       var swiperOptions = {
         loop: true,
-        speed: 1000,
+        speed: 10,
         grabCursor: true,
         watchSlidesProgress: true,
         mousewheelControl: true,
         keyboardControl: true,
+        autoplay:{
+          delay: 5000,
+          disableOnInteraction: true,
+        },
         navigation: {
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev"
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
         },
         on: {
           progress: function() {
@@ -398,7 +338,7 @@
               var innerTranslate = slideProgress * innerOffset;
               swiper.slides[i].querySelector(".slide-inner").style.transform =
                 "translate3d(" + innerTranslate + "px, 0, 0)";
-            }      
+            }
           },
           touchStart: function() {
             var swiper = this;
@@ -407,6 +347,7 @@
             }
           },
           setTransition: function(speed) {
+            console.log("Testing")
             var swiper = this;
             for (var i = 0; i < swiper.slides.length; i++) {
               swiper.slides[i].style.transition = speed + "ms";
